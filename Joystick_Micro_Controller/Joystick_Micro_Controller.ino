@@ -45,8 +45,8 @@ void loop() {
       if (holdHori == false) { //if the joystick was not pushed or over 25%
         holdHori = true; //save the 25% state
         Keyboard.press(KEY_LEFT_ARROW); //send left arrow signal to the computer
+        delay(100); //delay 100 milliseconds
         Keyboard.release(KEY_LEFT_ARROW); //release left arrow signal
-        delay(20); //delay 20 milliseconds
       } else //if the joystick is more than 25% pushed
         Keyboard.release(KEY_LEFT_ARROW); //if the joystick is in 25% and the signal has already been sent
     } else { //if the joystick is more than 25% pushed
@@ -58,8 +58,8 @@ void loop() {
       if (holdHori == false) { //if the joystick was not pushed or over 25%
         holdHori = true; //save the 25% state
         Keyboard.press(KEY_RIGHT_ARROW); //send right arrow signal to the computer
+        delay(100); //delay 100 milliseconds
         Keyboard.release(KEY_RIGHT_ARROW); //release right arrow signal
-        delay(20); //delay 20 milliseconds
       } else //if the joystick is more than 25% pushed
         Keyboard.release(KEY_RIGHT_ARROW); //if the joystick is in 25% and the signal has already been sent
     } else { //if the joystick is more than 25% pushed
@@ -75,8 +75,8 @@ void loop() {
       if (holdVert == false) { //if the joystick was not pushed or over 25%
         holdVert = true; //save the 25% state
         Keyboard.press(KEY_UP_ARROW); //send up arrow signal to the computer
+        delay(100); //delay 100 milliseconds
         Keyboard.release(KEY_UP_ARROW); //release up arrow signal
-        delay(20); //delay 20 milliseconds
       } else //if the joystick is more than 25% pushed
         Keyboard.release(KEY_UP_ARROW); //if the joystick is in 25% and the signal has already been sent
     } else { //if the joystick is more than 25% pushed
@@ -88,8 +88,8 @@ void loop() {
       if (holdVert == false) { //if the joystick was not pushed or over 25%
         holdVert = true; //save the 25% state
         Keyboard.press(KEY_DOWN_ARROW); //send down arrow signal to the computer
+        delay(100); //delay 100 milliseconds
         Keyboard.release(KEY_DOWN_ARROW); //release down arrow signal
-        delay(20); //delay 20 milliseconds
       } else //if the joystick is more than 25% pushed
         Keyboard.release(KEY_DOWN_ARROW); //if the joystick is in 25% and the signal has already been sent
     } else { //if the joystick is more than 25% pushed

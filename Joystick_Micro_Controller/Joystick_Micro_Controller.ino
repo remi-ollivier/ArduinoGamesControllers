@@ -101,7 +101,7 @@ void loop() {
   }
 
   if (voiceReading > VOICE_THRESHOLD) { //if the voice is over the minimum value
-    Keyboard.press(0x20); //send signal to the computer
+    Keyboard.press(KEYBOARD_SPACE_BAR); //send signal to the computer
     Keyboard.releaseAll(); //release keyboard's signals
   }
 
